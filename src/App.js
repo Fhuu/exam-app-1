@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Navigation from './navigation/navbar'
+import CourseView from './courseView'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         >
           Learn React
         </a>
+        <CourseView />
       </header>
     </div>
   );

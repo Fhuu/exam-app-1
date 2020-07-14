@@ -24,4 +24,12 @@ route.get("/render", (req,res,next) => {
     res.render("prompt");
 })
 
+route.get("/courses", (req,res,next) => {
+    Course.find({}, (err, savedDoc) => {
+        res.json({
+            courses : savedDoc
+        })
+    })
+})
+
 module.exports = route;
