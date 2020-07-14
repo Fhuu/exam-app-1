@@ -13,7 +13,7 @@ const dummyCourse = {
 };
 
 afterAll(async () => {
-    await course.deleteOne({title : dummyCourse.title},(err, result) => {
+    await course.deleteMany({title : "dummy course"},(err, result) => {
         if (err) throw err;
         console.log(result);
     });
