@@ -6,11 +6,11 @@ const courseController = require("../controllers/courseController")
 route.post("/create", (req,res,next) => {
     let newCourse = new Course(
         {
-            title : "Row your boat",
-            date : "2020-07-13",
-            description : "Just row your boat okay!!!",
-            duration : 60,
-            participant : []
+            title : req.body.title,
+            date : req.body.date,
+            description : req.body.description,
+            duration : req.body.duration,
+            participant : req.body.participant
         }
     ); 
     
