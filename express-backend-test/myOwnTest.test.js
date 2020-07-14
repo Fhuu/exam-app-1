@@ -25,6 +25,7 @@ it("should create a course and response with status ok", async done => {
     .type("application/json")
     .send(JSON.stringify(dummyCourse))
     expect(res.type).toBe("application/json");
-    expect(res.status).toBe("ok");
+    expect(res.status).toBe(200);
+    expect(res.body.status).toBe("ok");
     done();
 })
