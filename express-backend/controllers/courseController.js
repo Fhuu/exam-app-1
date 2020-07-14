@@ -9,6 +9,7 @@ exports.showAll = (req,res,next) => {
     })  
 })}
 
+//#region index_draft
 exports.oneCourse = (req,res,next) => {
     let courseTitle = req.body.title;
     course.findOne({title : courseTitle}, (err, foundDocs) => {

@@ -21,3 +21,5 @@ const server = app.listen(config.port, () => {
 // start the chat server on the server
 const io = require('socket.io')(server)
 require('./socket/chat')(io)
+
+module.exports = app;
