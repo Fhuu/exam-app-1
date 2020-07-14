@@ -27,6 +27,6 @@ route.get("/render", (req,res,next) => {
 
 route.get("/courses", courseController.showAll)
 
-route.get("/singleCourse", courseController.oneCourse)
+route.post("/singleCourse", courseController.oneCourse)
 
 module.exports = route;

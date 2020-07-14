@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Navigation from './navigation/navbar'
 import CourseView from './courseView'
+import RowYourBoatCourse from './RowYourBoatCourse'
 
 function App() {
   return (
@@ -21,7 +22,9 @@ function App() {
         >
           Learn React
         </a>
-        <CourseView />
+        <CourseView /><br/>
+        <div>Below is component only for row your boat course</div><br/>
+        <RowYourBoatCourse />
       </header>
     </div>
   );

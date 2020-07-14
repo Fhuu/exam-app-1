@@ -15,9 +15,7 @@ class CourseView extends React.Component {
         }).then(Response => {
             Response.json()
             .then(data => {
-                this.setState({Courses : data.courses}, () => {
-                    console.log(this.state.Courses)
-                })
+                this.setState({Courses : data.courses})
             })
         })
     }
