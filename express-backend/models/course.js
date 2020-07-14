@@ -8,4 +8,4 @@ const courseSchema = mongoose.Schema({
     participant : [String]
 })
 
-module.exports = Mongoose.model("Course", courseSchema);
+module.exports = mongoose.model("Course", courseSchema);

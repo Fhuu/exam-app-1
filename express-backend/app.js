@@ -32,6 +32,7 @@ app.set('views', path.join(__dirname, '/views'))
 // app.use(morgan(':method :url :status * :response-time ms'))
 
 const router = require('./routes/index')
+const courseRoutes = require("./routes/courseRoutes");
 app.use('/', router)
-
+app.use('/course', courseRoutes);
 module.exports = app
