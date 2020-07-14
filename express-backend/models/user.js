@@ -23,7 +23,7 @@ var userSchema = new Schema(
             unique: true
         },
         courseId: {
-            type : String,
+            type : [String],
             trim : true
         }
     },
