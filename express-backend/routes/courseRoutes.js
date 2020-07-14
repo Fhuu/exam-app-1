@@ -20,4 +20,8 @@ route.post("/create", (req,res,next) => {
     })
 })
 
+route.get("/render", (req,res,next) => {
+    res.render("prompt");
+})
+
 module.exports = route;
